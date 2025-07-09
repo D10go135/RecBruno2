@@ -1,7 +1,7 @@
 # Bruno - Sistema Fullstack
 
 Sistema desenvolvido para gerenciar um inventário de produtos, utilizando Node.js com Express no backend, React no frontend e MySQL como banco de dados.
-Sendo um sitema com microsserviços como 
+Sendo um sitema com microsserviços sendo um auth-service e o outro task-service.
 
 ## Tecnologias Utilizadas
 
@@ -34,7 +34,7 @@ cd RecBruno2
 
 ### 2. Configurar o Backend
 
-#### 2.1 Instalar dependências
+#### 2.1 Instalar dependências auth-service
 ```bash
 cd auth-service
 npm install
@@ -44,7 +44,7 @@ npm install
 ```bash
 node server.js
 ```
-#### 2.3 Instalar dependências
+#### 2.3 Instalar dependências task-service
 ```bash
 cd task-service
 npm install
@@ -59,7 +59,7 @@ node server.js
 
 #### 3.1 Instalar dependências
 ```bash
-cd ../frontend
+cd frontend
 npm install
 ```
 
