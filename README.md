@@ -1,34 +1,81 @@
-Estrutura das pastas
-/frontend           # React App
-/backend
-  /auth-service     # Serviço de autenticação (login/cadastro/verify)
-  /task-service     # Serviço de produtos (rota protegida /produtos)
-Instalar as dependencias com npm install e rodar o frontend com npm start
-Fazer o comando docker-compose up -d para contenerização
+# Bruno - Sistema Fullstack
 
-Frontend:
-Biblioteca         / Ferramenta	Finalidade
-React	              Criação da interface web
-Axios	              Requisições HTTP para APIs
-React Router 	      Navegação entre páginas
-localStorage 	      Armazenar o token JWT
-Create React App	  Ambiente de desenvolvimento
+Sistema desenvolvido para gerenciar um inventário de produtos, utilizando Node.js com Express no backend, React no frontend e MySQL como banco de dados.
+Sendo um sitema com microsserviços como 
 
-Backend - Auth Service (auth-service)
-Pacote         / Lib	Finalidade
-Express	        Servidor Node.js
-jsonwebtoken	  Geração e validação de JWT
-Cors	          Permitir acesso entre domínios
-Axios	          Comunicação entre serviços 
+## Tecnologias Utilizadas
 
-Backend - Task Service (task-service)
-Pacote          / Lib	Finalidade
-Express	        Servidor para API de produtos
-Axios	          Validação do token via auth-service
-Cors	          Comunicação com frontend
-jsonwebtoken 	 Validação de token local 
-
-Dificuldade:
-Tive dificuldade na autorização do token na hora de criar os produtos.
+### Backend
+- Node.js
+- Express
+- MySQL
+- Cors
 
 
+### Frontend
+- React
+- Vite
+- Axios
+
+
+## Como Rodar o Projeto
+
+### Pré-requisitos
+- Node.js
+- MySQL
+- React
+- npm ou yarn
+
+### 1. Clonar o repositório
+```bash
+git clone https://github.com/D10go135/RecBruno2.git
+cd RecBruno2
+```
+
+### 2. Configurar o Backend
+
+#### 2.1 Instalar dependências
+```bash
+cd auth-service
+npm install
+```
+
+#### 2.2 Rodar servidor backend
+```bash
+node server.js
+```
+#### 2.3 Instalar dependências
+```bash
+cd task-service
+npm install
+```
+
+#### 2.4 Rodar servidor backend
+```bash
+node server.js
+```
+
+### 3. Configurar o Frontend
+
+#### 3.1 Instalar dependências
+```bash
+cd ../frontend
+npm install
+```
+
+#### 3.2 Rodar aplicação React
+```bash
+npm start
+```
+
+### 4. Configurar o docker
+
+#### 4.1 Rodar docker
+```bash
+docker-compose up -d
+
+```
+
+A aplicação estará disponível em `http://localhost:3000`.
+## Dificuldades:
+Deu problema na autorização do token na hora da criação de produtos.
