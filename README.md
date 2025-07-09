@@ -28,4 +28,7 @@ Axios	          Validação do token via auth-service
 Cors	          Comunicação com frontend
 jsonwebtoken 	 Validação de token local 
 
+Dificuldade:
+Tive dificuldade na autorização do token na hora de criar os produtos.
+
 
